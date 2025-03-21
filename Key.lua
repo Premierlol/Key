@@ -44,25 +44,25 @@ local function CheckKeyAndDiscordid()
 
     -- ตรวจสอบว่า Key อยู่ในรายการที่ถูกต้อง
     if not correctKeys[Key] then
-        player:Kick("❌ Wrong or Expired Key! You are kicked out of the game.")
+        player:Kick("❌ Wrong or Expired Key! You are kicked out of the game.")  -- เตะผู้เล่นออกหาก Key ผิด
         return
     end
 
     -- ตรวจสอบว่า Discordid อยู่ในรายการที่ถูกต้อง
     if not correctDiscordids[Discordid] then
-        player:Kick("❌ Wrong or Expired Discordid! You are kicked out of the game.")
+        player:Kick("❌ Wrong or Expired Discordid! You are kicked out of the game.")  -- เตะผู้เล่นออกหาก Discordid ผิด
         return
     end
 
     -- ตรวจสอบว่า Key ถูกใช้ไปแล้วในเครื่องอื่น
     if correctKeys[Key].hwid and correctKeys[Key].hwid ~= hwid then
-        player:Kick("❌ This Key is already used on another device!")
+        player:Kick("❌ This Key is already used on another device!")  -- เตะหาก Key ใช้ในเครื่องอื่น
         return
     end
 
     -- ตรวจสอบว่า Discordid ถูกใช้ไปแล้วในเครื่องอื่น
     if correctDiscordids[Discordid].hwid and correctDiscordids[Discordid].hwid ~= hwid then
-        player:Kick("❌ This Discordid is already used on another device!")
+        player:Kick("❌ This Discordid is already used on another device!")  -- เตะหาก Discordid ใช้ในเครื่องอื่น
         return
     end
 
