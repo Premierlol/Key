@@ -73,7 +73,7 @@ local function CheckKeyAndDiscordid()
     print("✅ Key และ Discordid ถูกต้อง! เริ่มต้นทำงาน...")
 
     -- หลังจากตรวจสอบว่า Key และ Discordid ถูกต้อง จะทำการโหลดสคริปต์จาก URL
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Premierlol/Key/refs/heads/main/Key.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Premierlol/Key/refs/heads/main/Script1.lua"))()
 end
 
 CheckKeyAndDiscordid()
