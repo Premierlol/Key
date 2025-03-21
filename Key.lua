@@ -38,8 +38,8 @@ local function CheckKeyAndDiscordid()
     RemoveExpiredKeysAndDiscordids()
 
     local player = game.Players.LocalPlayer
-    local Key = _G.Key           -- ดึงค่าคีย์จากภายนอก (_G.Key)
-    local Discordid = _G.Discordid  -- ดึงค่า Discord ID จากภายนอก (_G.Discordid)
+    local Key = script_key           -- ใช้ script_key ที่ตั้งค่าไว้ในภายนอก
+    local Discordid = script_discord  -- ใช้ script_discord ที่ตั้งค่าไว้ในภายนอก
     local hwid = GetHardwareID()
 
     -- ตรวจสอบว่า Key อยู่ในรายการที่ถูกต้อง
